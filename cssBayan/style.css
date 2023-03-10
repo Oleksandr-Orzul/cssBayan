@@ -1,0 +1,39 @@
+.container {
+  width: 80%;
+  margin: 0 auto;
+  font-weight: 900;
+  font-size: 1em;
+}
+body {
+  background: #f5f5eb;
+}
+input {
+  display: none;
+}
+h1 {
+  font-weight: 900;
+  color: black;
+}
+img {
+  display: block;
+  width: 0%;
+  margin: 2% auto;
+  transition: all 1s ease-in-out;
+}
+
+.element:checked + label img {
+  width: 80%;
+  margin: 2% auto;
+  transition: all 1s ease-in-out;
+}
+@media (min-width: 820px) {
+  .container {
+    color: red;
+    font-size: 1.3em;
+  }
+}
+@media (min-width: 1920px) {
+  .container {
+    font-size: 2.5em;
+  }
+}
