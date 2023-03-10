@@ -4,16 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
   <body>
     <div class="container">
-      <div class="header">
+      <header class="header">
         <h1>CSS Bayan</h1>
-      </div>
+      </header>
       <hr />
-      <div class="body">
+      <main class="main">
         <div class="copy">
           <input
             type="radio"
@@ -23,46 +24,58 @@
             checked
           />
           <label for="element1">
-            <span> You can't just copy and paste css</span>
-            <img src="./images/1.jpg" alt="Mem about CSS" />
+            <div class="labelText">
+              <span> You can't just copy and paste css</span
+              ><img class="closeIcon" src="./images/close.svg" />
+            </div>
+            <img class="mainImg" src="./images/1.jpg" alt="Mem about CSS" />
           </label>
         </div>
         <hr />
         <div class="calm">
           <input type="radio" id="element2" class="element" name="mem" />
           <label for="element2">
-            <span> Keep calm and carry on </span>
-            <img class="displaynone" src="./images/2.png" alt="Mem about calm"
+            <div class="labelText">
+              <span> Keep calm and carry on </span
+              ><img class="closeIcon" src="./images/close.svg" />
+            </div>
+            <img class="mainImg" src="./images/2.png" alt="Mem about calm"
           /></label>
         </div>
         <hr />
         <div class="element balance">
           <input type="radio" id="element3" class="element" name="mem" />
           <label for="element3">
-            <span> Work life balance</span>
-            <img
-              class="displaynone"
-              src="./images/3.jpg"
-              alt="Mem about balance"
+            <div class="labelText">
+              <span> Work life balance</span
+              ><img class="closeIcon" src="./images/close.svg" />
+            </div>
+            <img class="mainImg" src="./images/3.jpg" alt="Mem about balance"
           /></label>
         </div>
         <hr />
         <div class="element dude">
           <input type="radio" id="element4" class="element" name="mem" />
           <label for="element4">
-            <span>Dude, where's js?</span>
-            <img class="displaynone" src="./images/4.png" alt="Mem about js"
+            <div class="labelText">
+              <span>Dude, where's js?</span
+              ><img class="closeIcon" src="./images/close.svg" />
+            </div>
+            <img class="mainImg" src="./images/4.png" alt="Mem about js"
           /></label>
         </div>
         <hr />
         <div class="element relax">
           <input type="radio" id="element5" class="element" name="mem" />
           <label for="element5">
-            <span> Relax and take it easy</span>
-            <img class="displaynone" src="./images/5.jpg" alt="Mem about relax"
+            <div class="labelText">
+              <span> Relax and take it easy</span
+              ><img class="closeIcon" src="./images/close.svg" />
+            </div>
+            <img class="mainImg" src="./images/5.jpg" alt="Mem about relax"
           /></label>
         </div>
-      </div>
+      </main>
     </div>
   </body>
 </html>

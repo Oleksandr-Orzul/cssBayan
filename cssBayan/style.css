@@ -14,26 +14,50 @@ h1 {
   font-weight: 900;
   color: black;
 }
-img {
+.mainImg {
   display: block;
   width: 0%;
   margin: 2% auto;
   transition: all 1s ease-in-out;
 }
 
-.element:checked + label img {
+.element:checked + label .mainImg {
   width: 80%;
   margin: 2% auto;
   transition: all 1s ease-in-out;
 }
+.closeIcon {
+  display: none;
+  width: 1em;
+  margin: auto 0 auto auto;
+}
+.labelText {
+  display: flex;
+  justify-content: space-between;
+}
+
 @media (min-width: 820px) {
   .container {
-    color: red;
     font-size: 1.3em;
+  }
+  .closeIcon {
+    width: 1.2em;
   }
 }
 @media (min-width: 1920px) {
   .container {
     font-size: 2.5em;
+  }
+  .closeIcon {
+    width: 1.3em;
+  }
+  .element:checked + label {
+    color: black;
+  }
+  .container:hover {
+    color: blue;
+  }
+  .container:hover .closeIcon {
+    display: inline;
   }
 }
