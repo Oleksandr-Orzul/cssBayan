@@ -74,6 +74,12 @@ h1 {
   .allElement:hover .mainImg {
     width: 40%;
   }
+  .allElement:hover .closeIcon {
+    width: 1em;
+    transform: rotate(0deg);
+    transition: all 300ms ease-in-out;
+  }
+
   .element:checked + label .mainImg {
     width: 40%;
   }
